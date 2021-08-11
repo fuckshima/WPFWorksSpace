@@ -22,6 +22,7 @@ namespace WPFWorksSpace
     {
         public MainWindow()
         {
+            DataContext = new VMMainWindow();
             InitializeComponent();
         }
     }
