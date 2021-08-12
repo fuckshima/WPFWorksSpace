@@ -25,5 +25,14 @@ namespace WPFWorksSpace
             DataContext = new VMMainWindow();
             InitializeComponent();
         }
+
+        private void Button_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            VMMainWindow vm = DataContext as VMMainWindow;
+            if (vm != null)
+            {
+                vm.DisplayImage = new BitmapImage(new Uri("Images/ライザのアトリエ.jpg", UriKind.Relative));
+            }
+        }
     }
 }

@@ -39,9 +39,13 @@ namespace WPFWorksSpace
         }
         public static readonly DependencyProperty MyTextProperty =
             DependencyProperty.Register(
-                "MyText",                               // プロパティ名
+                nameof(MyText),                         // プロパティ名
                 typeof(string),                         // プロパティの型
                 typeof(ImageDisplayWindow),             // プロパティを所有する型＝このクラスの名前
-                new PropertyMetadata("ほげ"));    // 初期値
+                new PropertyMetadata(string.Empty));    // 初期値
+
+        private void Image_MouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
+        {
+        }
     }
 }

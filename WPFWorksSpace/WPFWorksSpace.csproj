@@ -108,5 +108,8 @@
   <ItemGroup>
     <Resource Include="Images\ソフィーのアトリエ.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ライザのアトリエ.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
